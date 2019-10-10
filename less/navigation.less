@@ -1,6 +1,8 @@
 // Navigation CSS here
 .navi nav{
     .center();
+    background-color: @footer-bg;
+    border-radius: 15px;
 
     a{
         font-size: 2rem;
@@ -8,5 +10,8 @@
         text-decoration: none;
         color: @nav-links;
         padding: 1% 2%;
+    }
+    a:hover{
+        text-decoration: underline overline @nav-links solid;
     }
 }

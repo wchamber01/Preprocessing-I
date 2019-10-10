@@ -190,6 +190,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(118, 100, 75, 0.2);
+  border-radius: 15px;
 }
 .navi nav a {
   font-size: 2rem;
@@ -198,11 +200,16 @@ a {
   color: #781f2c;
   padding: 1% 2%;
 }
+.navi nav a:hover {
+  text-decoration: underline overline #781f2c solid;
+}
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #76644B;
+  background-color: rgba(118, 100, 75, 0.2);
+  border-radius: 15px;
+  padding: 0.75% 0;
 }
 .top {
   display: flex;
@@ -214,28 +221,61 @@ footer {
   width: 50%;
   display: flex;
 }
+.top .img img {
+  border-radius: 20%;
+  width: 100%;
+  padding: 5%;
+}
 .top .info {
   width: 50%;
   display: flex;
+  padding: 2.5%;
 }
 .top .info div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
+  background-color: rgba(120, 115, 118, 0.2);
+  border-radius: 20%;
+}
+.top .info .icons {
+  background-color: transparent;
+}
+.top .info h1,
+.top .info h2 {
+  text-align: center;
+  width: 100%;
+  margin: 0 15%;
+  line-height: 1.25;
+}
+.top .info h1 {
+  border-bottom: 2px dashed black;
+  padding-bottom: 12%;
 }
 .top .info a {
+  flex-wrap: nowrap;
+  width: 30%;
   font-size: 3.5rem;
-  padding: 0 2.5vh;
   color: #781f2c;
+  text-align: center;
 }
 .bottom {
   display: flex;
+  padding-bottom: 5%;
 }
-.bottom .experience {
+.bottom h3 {
+  padding-bottom: 3%;
+  text-decoration: 3px solid black;
+}
+.bottom #experience {
   width: 50%;
   text-align: center;
 }
-.bottom .about {
+.bottom #about {
   width: 50%;
+  background-color: rgba(120, 115, 118, 0.2);
+  padding: 1% 2% 2%;
+  border-radius: 10px;
 }
