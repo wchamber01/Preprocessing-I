@@ -261,6 +261,9 @@ footer {
   color: #781f2c;
   text-align: center;
 }
+.top .info a:hover {
+  font-size: 5rem;
+}
 .bottom {
   display: flex;
   padding-bottom: 5%;
@@ -271,11 +274,15 @@ footer {
 }
 .bottom #experience {
   width: 50%;
-  text-align: center;
+  background-color: rgba(120, 115, 118, 0.2);
+  margin: 0 2.5%;
+  padding: 1% 2% 2%;
+  border-radius: 10px;
 }
 .bottom #about {
   width: 50%;
   background-color: rgba(120, 115, 118, 0.2);
+  margin: 0 2.5%;
   padding: 1% 2% 2%;
   border-radius: 10px;
 }
