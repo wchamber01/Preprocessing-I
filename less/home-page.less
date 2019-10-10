@@ -1,1 +1,39 @@
 // Home-page CSS here
+.top{
+    // .center();
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+    margin-bottom: 5%;
+
+    .img{
+        width: 50%;
+        display: flex;
+    }
+    .info{
+        width: 50%;
+        display: flex;
+        
+        div{
+            .center();
+            flex-wrap: wrap;
+        }
+        a{
+            font-size: 3.5rem;
+            padding: 0 2.5vh;
+            color: @nav-links;
+        }
+    }
+}
+
+.bottom{
+    display: flex;
+
+    .experience{
+        width: 50%;
+        text-align: center;
+    }
+    .about{
+        width: 50%;
+    }
+}

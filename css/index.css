@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Amiri';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Amiri Regular'), local('Amiri-Regular'), url(https://fonts.gstatic.com/s/amiri/v13/J7aRnpd8CGxBHpUutLY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Caveat Regular'), local('Caveat-Regular'), url(https://fonts.gstatic.com/s/caveat/v7/Wnz6HAc5bAfYB2Q7ZjYd.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -136,6 +150,10 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+body {
+  margin: 5% 7%;
+  background-color: #e2e2e6;
+}
 h1,
 h2,
 h3,
@@ -167,35 +185,57 @@ a {
   font-family: 'Indie Flower', cursive;
 }
 /************TEST BORDER*********************/
-body {
-  border: 1px solid gray;
+/************TEST BORDER*********************/
+.navi nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-header {
-  border: 1px solid gray;
-}
-div {
-  border: 1px solid gray;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  border: 1px solid gray;
-}
-a {
-  border: 1px solid gray;
-}
-p {
-  border: 1px solid gray;
-}
-nav {
-  border: 1px solid gray;
+.navi nav a {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #781f2c;
+  padding: 1% 2%;
 }
 footer {
-  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #76644B;
 }
-img {
-  border: 1px solid gray;
+.top {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5%;
+  margin-bottom: 5%;
 }
-/************TEST BORDER*********************/
+.top .img {
+  width: 50%;
+  display: flex;
+}
+.top .info {
+  width: 50%;
+  display: flex;
+}
+.top .info div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.top .info a {
+  font-size: 3.5rem;
+  padding: 0 2.5vh;
+  color: #781f2c;
+}
+.bottom {
+  display: flex;
+}
+.bottom .experience {
+  width: 50%;
+  text-align: center;
+}
+.bottom .about {
+  width: 50%;
+}
